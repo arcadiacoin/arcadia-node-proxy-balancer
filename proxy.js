@@ -16,10 +16,10 @@ var runHTTPS = false;
 var runHTTP = true;
 var runWS = true;
 
-var HTTPS_PORT = 7705;
-var HTTP_PORT = 7776;
+var HTTPS_PORT = 7205;
+var HTTP_PORT = 7206;
 var HTTP_PATH = '/';
-var WS_PORT = 7778;
+var WS_PORT = 7208;
 var PREFIX_OVERRIDE = false;
 
 var ENDPOINTS_PUBLIC = [{hostname:'127.0.0.1', port:'7046', path: '/'}];
