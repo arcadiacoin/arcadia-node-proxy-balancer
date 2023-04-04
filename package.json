@@ -1,0 +1,14 @@
+{
+  "name": "Arcadia RPC/WS Proxy and Balancer",
+  "version": "1.0.0",
+  "dependencies": {
+    "bluebird": "3.7.2",
+    "cors": "expressjs/cors",
+    "express": "expressjs/express",
+    "posix": "^4.2.0",
+    "redis": "4.0.4",
+	"express-rate-limit": "6.7.0",
+	"ws": "^8.13.0",
+	"minimist": "^1.2.8"
+  }
+}

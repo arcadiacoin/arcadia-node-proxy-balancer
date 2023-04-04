@@ -1,0 +1,51 @@
+var config = {};
+
+config.runHTTPS = false;
+config.runHTTP = true;
+config.runWS = true;
+
+config.HTTPS_PORT = 7205;
+config.HTTP_PORT = 7206;
+config.HTTP_PATH = '/';
+config.WS_PORT = 7208;
+config.PREFIX_OVERRIDE = false;
+
+config.ENDPOINTS_PUBLIC = [{hostname:'127.0.0.1', port:'7046', path: '/'}];
+config.ENDPOINTS_PRIVATE = [{hostname:'127.0.0.1', port:'7046', path: '/'}];
+config.ENDPOINTS_HEAVY = [{hostname:'127.0.0.1', port:'7046', path: '/'}];
+config.ENDPOINT_WS = 'ws://127.0.0.1:7048';
+
+config.privateKey = '/etc/letsencrypt/live/domain/privkey.pem';
+config.certificate = '/etc/letsencrypt/live/domain/cert.pem';
+config.ca = '/etc/letsencrypt/live/domain/chain.pem';
+
+config.limit_exclusion_ips = [];
+
+config.public_actions = [
+	"accounts_balances",
+	"accounts_frontiers",
+	"accounts_pending",
+	"account_info",
+	"account_history",
+	"active_difficulty",
+	"block_count",
+	"block_info",
+	"blocks_info",
+	"confirmation_history",
+	"confirmation_quorum",
+	"peers",
+	"pending",
+	"representatives",
+	"representatives_online",
+	"uptime",
+	"version",
+	"delegators"
+];
+config.protected_actions = [
+	"process",
+];
+config.protected_heavy_actions = [
+	"work_generate"
+];
+
+module.exports = config;
