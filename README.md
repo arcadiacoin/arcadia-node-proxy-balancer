@@ -2,7 +2,7 @@
 A RPC/WS proxy and balancer for Arcadia's node
 
 ## Install dependencies
-``
+```
 npm install
 ```
 
